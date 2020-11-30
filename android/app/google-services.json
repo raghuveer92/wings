@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "904843918958",
+    "firebase_url": "https://wings-7862b.firebaseio.com",
+    "project_id": "wings-7862b",
+    "storage_bucket": "wings-7862b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904843918958:android:871a795dc023065c74707f",
+        "android_client_info": {
+          "package_name": "com.kanhaiya.wings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904843918958-pa5c1kvnkic76j5jlrkk0rdvm7m7eob1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBTr-LbhZKmnjx6nkHG5TLvDNE_DiMMRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904843918958-pa5c1kvnkic76j5jlrkk0rdvm7m7eob1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
