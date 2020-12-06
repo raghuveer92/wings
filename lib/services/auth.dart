@@ -18,8 +18,8 @@ class AuthService{
     Preferences.saveString(PrefKeys.EMAIL, "guest***@wings.com");
     Preferences.saveString(PrefKeys.ROLE, "GUEST");
     Preferences.saveBool(PrefKeys.LOGGED_IN, true);
-    var backendlessUser = await Backendless.userService.loginAsGuest(true);
-    Preferences.saveString(PrefKeys.USER_ID, backendlessUser.getUserId());
+    var backendLessUser = await Backendless.userService.loginAsGuest(true);
+    Preferences.saveString(PrefKeys.USER_ID, backendLessUser.getUserId());
   }
 
   Future getLoggedUser() async{

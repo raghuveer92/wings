@@ -3,10 +3,10 @@ import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:wings/screens/base/base_stateful_screen.dart';
 import 'package:wings/services/database.dart';
-import 'package:wings/utils/firebase_messaging.dart';
 import 'package:wings/widgets/cart.dart';
 import 'package:wings/widgets/drawer.dart';
 import 'package:wings/widgets/image_loader.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class Home extends StatefulWidget {
   @override
@@ -19,14 +19,14 @@ class _HomeState extends BaseState<Home> {
   void initState() {
     super.initState();
     _databaseService.saveLocalList(orderBy: ["score ASC"]);
-    final _messaging = FBMessaging.instance;
-    _messaging.requestPermission().then((_) async {
-      final _token = await _messaging.getToken();
-      print('Token: $_token');
-    });
-    _messaging.stream.listen((event) {
-      print('New Message: ${event}');
-    });
+    // final _messaging = FBMessaging.instance;
+    // _messaging.requestPermission().then((_) async {
+    //   final _token = await _messaging.getToken();
+    //   print('Token: $_token');
+    // });
+    // _messaging.stream.listen((event) {
+    //   print('New Message: ${event}');
+    // });
   }
 
   @override

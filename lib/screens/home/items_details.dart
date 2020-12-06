@@ -66,7 +66,7 @@ class _ItemsDetailsState extends BaseState<ItemsDetails> {
                       child: ListView(
                         children: [
                           Container(
-                            height: 200,
+                            height: 300,
                             width: double.maxFinite,
                             color: Colors.grey[400],
                             child: InkWell(
@@ -75,7 +75,7 @@ class _ItemsDetailsState extends BaseState<ItemsDetails> {
                               },
                               child: ImageView(
                                 imageUrl: selectedColor != null ? selectedColor["image"] : '${itemData['mainImage']}',
-                                height: 200,
+                                height: 300,
                               ),
                             ),
                           ),
@@ -97,6 +97,7 @@ class _ItemsDetailsState extends BaseState<ItemsDetails> {
                                           Navigator.pushNamed(context, "/fullImage", arguments: color["image"]);
                                         },
                                         child: ImageView(
+                                          width: 100,
                                           height: 60,
                                           imageUrl: color["image"],
                                         ),
@@ -129,6 +130,7 @@ class _ItemsDetailsState extends BaseState<ItemsDetails> {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,

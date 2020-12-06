@@ -30,7 +30,7 @@ class _OrderDetailsState extends BaseState<OrderDetails> {
         elevation: 5.0,
       ),
       body: FutureBuilder(
-        future: DatabaseService("orders").get(widget.orderId, relationsDepth: 2, related: ["orderItems","address"]),
+        future: DatabaseService("orders").get(widget.orderId, relationsDepth: 2, related: ["orderItems","orderItems.item","address"]),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(child: CircularProgressIndicator());

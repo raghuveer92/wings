@@ -1,6 +1,7 @@
 import 'package:backendless_sdk/backendless_sdk.dart';
 import 'package:flutter/material.dart';
 import 'package:wings/screens/base/base_stateful_screen.dart';
+import 'package:wings/services/database.dart';
 import 'package:wings/widgets/image_loader.dart';
 
 class Categories extends StatefulWidget {
@@ -9,6 +10,8 @@ class Categories extends StatefulWidget {
 }
 
 class _CategoriesState extends BaseState<Categories> {
+  var databaseService = DatabaseService("categories");
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +30,7 @@ class _CategoriesState extends BaseState<Categories> {
         ],
       ),
       body: FutureBuilder(
-        future: Backendless.data.of("categories").find(),
+        future: databaseService.find(),
         builder: (context, spanshot) {
           if (spanshot.connectionState == ConnectionState.waiting) {
             return Center(child: CircularProgressIndicator());
@@ -69,7 +72,7 @@ class _CategoriesState extends BaseState<Categories> {
                             case 'Delete Product':
                               showProgress();
                               try {
-                                Backendless.data.of("categories").remove(entity: document);
+                                databaseService.delete(document);
                               } catch (e) {
                                 print(e);
                               }

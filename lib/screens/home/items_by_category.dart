@@ -77,12 +77,12 @@ class _ItemsByCategoryState extends BaseState<ItemsByCategory> {
                     alignment: Alignment.bottomLeft,
                     children: [
                       Container(
-                        height: 200,
+                        height: 300,
                         width: double.maxFinite,
                         color: Colors.grey[400],
                         child: ImageView(
                           imageUrl: '${document['mainImage']}',
-                          height: 200,
+                          height: 300,
                         ),
                       ),
                       Container(

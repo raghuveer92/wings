@@ -17,8 +17,7 @@ class MyOrders extends StatefulWidget {
 class _MyOrders extends BaseState<MyOrders> {
   final DatabaseService _databaseService = DatabaseService("orders");
 
-  get getOrders => Preferences.getString(PrefKeys.EMAIL) == "raghuveer.ameta92@gmail.com"?_databaseService.find(orderBy: ["created DESC"], relationsDepth: 2):_databaseService.find(query: "userId='${Preferences.getString(PrefKeys.USER_ID)}'",orderBy: ["created DESC"], relationsDepth: 2);
-
+  get getOrders => Preferences.getString(PrefKeys.EMAIL) == "raghuveer.ameta92@gmail.com"?_databaseService.find(orderBy: ["created DESC"], relationsDepth: 2,related: ["orderItems","orderItems.item","address"]):_databaseService.find(query: "userId='${Preferences.getString(PrefKeys.USER_ID)}'",orderBy: ["created DESC"], relationsDepth: 3,related: ["orderItems","orderItems.item","address"]);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,6 +34,7 @@ class _MyOrders extends BaseState<MyOrders> {
           if (stream.hasError) {
             return Center(child: Text(stream.error.toString()));
           }
+          print("stream.data: ${stream.data}");
           List querySnapshot = stream.data;
           if (querySnapshot.length == 0) {
             return Center(
