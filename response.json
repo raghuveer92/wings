@@ -1,0 +1,744 @@
+{
+  "error": false,
+  "code": "0",
+  "data": {
+    "userGroupId": 2,
+    "menus": [
+      {
+        "name": "Orders",
+        "access": true,
+        "code":1,
+        "actions": [
+          {
+            "code": 1,
+            "name": "View Orders",
+            "access": true
+          },
+          {
+            "code": 2,
+            "name": "Edit Orders",
+            "access": true
+          },
+          {
+            "code": 3,
+            "name": "Delete Orders",
+            "access": false
+          },
+          {
+            "code": 4,
+            "name": "Add Order",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "SuppliersMaster",
+        "access": true,
+        "code":2,
+        "actions": [
+          {
+            "code": 5,
+            "name": "View Suppliers Master",
+            "access": true
+          },
+          {
+            "code": 6,
+            "name": "Add Suppliers Master",
+            "access": true
+          },
+          {
+            "code": 7,
+            "name": "Update Suppliers Master",
+            "access": false
+          },
+          {
+            "code": 8,
+            "name": "Delete Suppliers Master",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "TaskMonitorReports",
+        "access": false,
+        "code":3,
+        "actions": [
+          {
+            "code": 9,
+            "name": "View TaskMonitorReport",
+            "access": false
+          },
+          {
+            "code": 10,
+            "name": "Export TaskMonitorReport",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "BundleMaster",
+        "access": false,
+        "code":4,
+        "actions": [
+          {
+            "code": 11,
+            "name": "View Bundle Master",
+            "access": false
+          },
+          {
+            "code": 12,
+            "name": "Upload Bundles",
+            "access": false
+          },
+          {
+            "code": 13,
+            "name": "Delete Bundle",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "RealTimeTracking",
+        "access": false,
+        "code": 5,
+        "actions": [
+          {
+            "code": 14,
+            "name": "View Real Time Tracking",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "InventoryReport",
+        "access": false,
+        "code": 6,
+        "actions": [
+          {
+            "code": 15,
+            "name": "View InventoryReport",
+            "access": false
+          },
+          {
+            "code": 16,
+            "name": "Export InventoryReport",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "BrandMasters",
+        "access": false,
+        "code": 7,
+        "actions": [
+          {
+            "code": 17,
+            "name": "View Brand",
+            "access": false
+          },
+          {
+            "code": 18,
+            "name": "Add Brand",
+            "access": false
+          },
+          {
+            "code": 19,
+            "name": "Update Brand",
+            "access": false
+          },
+          {
+            "code": 20,
+            "name": "Delete Brand",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "UnitMaster",
+        "access": true,
+        "code": 8,
+        "actions": [
+          {
+            "code": 21,
+            "name": "View Unit Master",
+            "access": true
+          },
+          {
+            "code": 22,
+            "name": "Add Unit Master",
+            "access": true
+          },
+          {
+            "code": 23,
+            "name": "Update Unit Master",
+            "access": false
+          },
+          {
+            "code": 24,
+            "name": "Delete Unit Master",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "GroupFirstMasters",
+        "access": true,
+        "code": 9,
+        "actions": [
+          {
+            "code": 25,
+            "name": "View Group First",
+            "access": true
+          },
+          {
+            "code": 26,
+            "name": "Add Group First",
+            "access": true
+          },
+          {
+            "code": 27,
+            "name": "Update Group First",
+            "access": true
+          },
+          {
+            "code": 28,
+            "name": "Delete Group First",
+            "access": true
+          }
+        ]
+      },
+      {
+        "name": "HrAttendanceLogs",
+        "access": false,
+        "code": 10,
+        "actions": [
+          {
+            "code": 29,
+            "name": "View Hr Attendance Logs",
+            "access": false
+          },
+          {
+            "code": 30,
+            "name": "Upload Hr Attendance Logs",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "DPR-Report",
+        "access": true,
+        "code": 11,
+        "actions": [
+          {
+            "code": 31,
+            "name": "View DPR",
+            "access": true
+          },
+          {
+            "code": 32,
+            "name": "Export DPR",
+            "access": true
+          }
+        ]
+      },
+      {
+        "name": "Style",
+        "access": false,
+        "code": 12,
+        "actions": [
+          {
+            "code":33 ,
+            "name": "View Style",
+            "access": false
+          },
+          {
+            "code": 34,
+            "name": "Add Style",
+            "access": false
+          },
+          {
+            "code": 35,
+            "name": "Update Style",
+            "access": false
+          },
+          {
+            "code": 36,
+            "name": "Delete Style",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "ScanDataReports",
+        "access": false,
+        "code": 13,
+        "actions": [
+          {
+            "code": 37,
+            "name": "View ScanDataReports",
+            "access": false
+          },
+          {
+            "code": 38,
+            "name": "Export ScanDataReports",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "CustomerMasters",
+        "access": false,
+        "code": 14,
+        "actions": [
+          {
+            "code": 39,
+            "name": "View Customer",
+            "access": false
+          },
+          {
+            "code": 40,
+            "name": "Add Customer",
+            "access": false
+          },
+          {
+            "code": 41,
+            "name": "Update Customer",
+            "access": false
+          },
+          {
+            "code": 42,
+            "name": "Delete Customer",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "SizeMaster",
+        "access": false,
+        "code": 15,
+        "actions": [
+          {
+            "code": 43,
+            "name": "View Size",
+            "access": false
+          },
+          {
+            "code": 44,
+            "name": "Add Size",
+            "access": false
+          },
+          {
+            "code": 45,
+            "name": "Update Size",
+            "access": false
+          },
+          {
+            "code": 46,
+            "name": "Delete Size",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "Settings",
+        "access": true,
+        "code": 16,
+        "actions": [
+          {
+            "code": 47,
+            "name": "View Users",
+            "access": true
+          },
+          {
+            "code": 48,
+            "name": "View User Groups",
+            "access": true
+          },
+          {
+            "code": 49,
+            "name": "Add User",
+            "access": true
+          },
+          {
+            "code": 50,
+            "name": "Add User Groups",
+            "access": true
+          },
+          {
+            "code": 51,
+            "name": "Update User",
+            "access": true
+          },
+          {
+            "code": 52,
+            "name": "Update User Group",
+            "access": false
+          },
+          {
+            "code": 53,
+            "name": "DELETE User",
+            "access": false
+          },
+          {
+            "code": 54,
+            "name": "DELETE User Group",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "UnitOfMeasure",
+        "access": false,
+        "code": 17,
+        "actions": [
+          {
+            "code": 55,
+            "name": "View UOM",
+            "access": false
+          },
+          {
+            "code": 56,
+            "name": "Add UOM",
+            "access": false
+          },
+          {
+            "code": 57,
+            "name": "Update UOM",
+            "access": false
+          },
+          {
+            "code": 58,
+            "name": "Delete UOM",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "BundleReports",
+        "access": false,
+        "code": 18,
+        "actions": [
+          {
+            "code": 59,
+            "name": "View Bundle Reports",
+            "access": false
+          },
+          {
+            "code":60 ,
+            "name": "Pring Labels",
+            "access": false
+          },
+          {
+            "code": 61,
+            "name": "Pring Bundle Report",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "SizeGroupMaster",
+        "access": false,
+        "code": 19,
+        "actions": [
+          {
+            "code": 62,
+            "name": "View Size Group",
+            "access": false
+          },
+          {
+            "code": 63,
+            "name": "Add Size Group",
+            "access": false
+          },
+          {
+            "code": 64,
+            "name": "Update Size Group",
+            "access": false
+          },
+          {
+            "code": 65,
+            "name": "Delete Size Group",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "QRCodeReports",
+        "access": false,
+        "code": 20,
+        "actions": [
+          {
+            "code": 66,
+            "name": "View QRCodeReports",
+            "access": false
+          },
+          {
+            "code": 67,
+            "name": "Export QRCodeReports",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "DC-Report",
+        "access": false,
+        "code": 21,
+        "actions": [
+          {
+            "code": 68,
+            "name": "View DPR",
+            "access": false
+          },
+          {
+            "code": 69,
+            "name": "Export DPR",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "ScanDetails",
+        "access": false,
+        "code": 22,
+        "actions": [
+          {
+            "code": 70,
+            "name": "View Scan Details",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "ProductionRealtimeMonitoringReport",
+        "access": false,
+        "code": 23,
+        "actions": [
+          {
+            "code": 71,
+            "name": "View ProductionRealtimeMonitoringReport",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "GroupSecondMasters",
+        "access": false,
+        "code": 24,
+        "actions": [
+          {
+            "code": 72,
+            "name": "View Group Second",
+            "access": false
+          },
+          {
+            "code": 73,
+            "name": "Add Group Second",
+            "access": false
+          },
+          {
+            "code": 74,
+            "name": "Update Group Second",
+            "access": false
+          },
+          {
+            "code": 75,
+            "name": "Delete Group Second",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "HRLogComparison",
+        "access": false,
+        "code": 25,
+        "actions": [
+          {
+            "code": 76,
+            "name": "View HRLogComparison",
+            "access": false
+          },
+          {
+            "code":77 ,
+            "name": "Export HRLogComparison",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "ProcessMaster",
+        "access": false,
+        "code": 26,
+        "actions": [
+          {
+            "code":78 ,
+            "name": "View Process",
+            "access": false
+          },
+          {
+            "code": 79,
+            "name": "Add Process",
+            "access": false
+          },
+          {
+            "code": 80,
+            "name": "Update Process",
+            "access": false
+          },
+          {
+            "code": 81,
+            "name": "Delete Process",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "RealTimeProductionMonitoring",
+        "access": false,
+        "code": 27,
+        "actions": [
+          {
+            "code": 82,
+            "name": "View",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "BundleTracking",
+        "access": false,
+        "code": 28,
+        "actions": [
+          {
+            "code": 83,
+            "name": "View Bundle Tracking",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "ProductionLine",
+        "access": false,
+        "code": 29,
+        "actions": [
+          {
+            "code": 84,
+            "name": "View Production Line",
+            "access": false
+          },
+          {
+            "code": 85,
+            "name": "Update Production Line",
+            "access": false
+          },
+          {
+            "code": 86,
+            "name": "Delete Production Line",
+            "access": false
+          },
+          {
+            "code": 87,
+            "name": "Add Production Line",
+            "access": false
+          },
+          {
+            "code": 88,
+            "name": "Clone Production Line",
+            "access": false
+          },
+          {
+            "code": 89,
+            "name": "Add Process",
+            "access": false
+          },
+          {
+            "code": 90,
+            "name": "Update Process",
+            "access": false
+          },
+          {
+            "code": 91,
+            "name": "Delete Process",
+            "access": false
+          },
+          {
+            "code": 92,
+            "name": "Link Device",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "SKUMaster",
+        "access": true,
+        "code": 30,
+        "actions": [
+          {
+            "code": 93,
+            "name": "View SKU",
+            "access": false
+          },
+          {
+            "code": 94,
+            "name": "Add SKU",
+            "access": true
+          },
+          {
+            "code": 95,
+            "name": "Update SKU",
+            "access": true
+          },
+          {
+            "code": 96,
+            "name": "Delete SKU",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "SeasonMasters",
+        "access": false,
+        "code": 31,
+        "actions": [
+          {
+            "code": 97,
+            "name": "View Season",
+            "access": false
+          },
+          {
+            "code": 98,
+            "name": "Add Season",
+            "access": false
+          },
+          {
+            "code": 99,
+            "name": "Update Season",
+            "access": false
+          },
+          {
+            "code": 100,
+            "name": "Delete Season",
+            "access": false
+          }
+        ]
+      },
+      {
+        "name": "TimeUtilization",
+        "access": false,
+        "code": 32,
+        "actions": [
+          {
+            "code": 101,
+            "name": "View TimeUtilization",
+            "access": false
+          },
+          {
+            "code": 102,
+            "name": "Export TimeUtilization",
+            "access": false
+          }
+        ]
+      }
+    ]
+  },
+  "message": "SUCCESS"
+}
